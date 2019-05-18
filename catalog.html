@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
 </head>
+
 <body>
+
 <header>
   <nav>
     <a href="index.html">
       <img src="img/content/logo.png">
     </a>
-    <!--форма поиска-->
+    <form class="search">
+      <input type="search" placeholder="Поиск:">
+      <input type="submit">
+    </form>
     <a class="marker" href="#">Закладки</a>
     <a class="basket" href="#">Корзина</a>
     <a class="checkout" href="#">Оформить заказ</a>
@@ -267,6 +273,7 @@
     </ul>
   </section>
 </main>
+
   <footer class="main-footer">
     <div class="footer-up">
       <a href="index.html">
@@ -295,9 +302,9 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#" target="_blank">Вконтакте</a></li>
-          <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
-          <li><a class="social-button" href="#" target="_blank">Инстаграм</a></li>
+          <li><a class="social-button" href="#" target="_blank"><img src="img/svg/icon-vk.svg">Вконтакте</a></li>
+          <li><a class="social-button" href="#" target="_blank"><img src="img/svg/icon-fb.svg">Фейсбук</a></li>
+          <li><a class="social-button" href="#" target="_blank"><img src="img/svg/icon-insta.svg">Инстаграм</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
@@ -323,5 +330,12 @@
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <span class="modal-close">x</span>
   </section>
+
+<section class="pop-up">
+  <p>Товар добавлен в корзину</p>
+  <button>Оформить заказ</button>
+  <button>Продолжить покупки</button>
+  <button>X<!--close--></button>
+</section>
 </body>
 </html>
