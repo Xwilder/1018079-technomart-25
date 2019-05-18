@@ -11,7 +11,10 @@
         <a href="index.html">
           <img src="img/content/logo.png">
         </a>
-        <!--форма поиска-->
+        <form class="search">
+          <input type="search" placeholder="Поиск:">
+          <input type="submit">
+        </form>
         <a class="marker" href="#">Закладки</a>
         <a class="basket" href="#">Корзина</a>
         <a class="checkout" href="#">Оформить заказ</a>
@@ -81,9 +84,9 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#" target="_blank">Вконтакте</a></li>
-          <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
-          <li><a class="social-button" href="#" target="_blank">Инстаграм</a></li>
+          <li><a class="social-button" href="#" target="_blank"><img src="img/svg/icon-vk.svg">Вконтакте</a></li>
+          <li><a class="social-button" href="#" target="_blank"><img src="img/svg/icon-fb.svg">Фейсбук</a></li>
+          <li><a class="social-button" href="#" target="_blank"><img src="img/svg/icon-insta.svg">Инстаграм</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
@@ -109,6 +112,22 @@
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <span class="modal-close">x</span>
+  </section>
+
+  <section class="pop-up letter">
+    <form class="letter-from-the-client">
+      <label>
+        Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+      <label>
+        Ваш e-mail:<input type="text" name="e-mail" placeholder="email@example.com">
+      </label>
+      <label>
+        Текст письма:<input type="text" name="letter" placeholder="В свободной форме">
+      </label>
+      <input type="submit" value="Отправить">
+      <button>X<!--close--></button>
+    </form>
   </section>
   </body>
 </html>
