@@ -21,6 +21,10 @@ a {
 }
 
 .site-navigation {
+  width: 1280px;
+  height: 42px;
+  background-color: #293449;
+
   font-size: 17px;
   font-weight: normal;
   font-style: normal;
@@ -32,28 +36,67 @@ a {
   background-color: #293449;
 }
 
-.marker a:hover,
-.basket a:hover {
+.marker:hover,
+.basket:hover {
   background-color: #212a3a;
 }
+.index {
+  text-transform: uppercase;
+  font-size: 19px;
+  display: block;
+  width: 220px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+.index:hover {
+  background-color: #ca2c37;
+}
 
+.search {
+  display: inline;
+  width: 27px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+}
+.marker,
+.basket {
+  display: block;
+  width: 150px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+}
 .checkout {
+  display: block;
   width: 150px;
   height: 42px;
   background-color: #63a63e;
+  line-height: 42px;
+  text-align: center;
 }
-.checkout a:hover,
-.checkout a:focus {
+.checkout:hover {
   background-color: #5fbb2d;
 }
 
 .main-navigator {
+  width: 940px;
+  height: 60px;
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
+  margin: 0 auto;
 }
 
-.mine-navigation a:hover,
-.mine-navigation a:focus {
+.main-navigator li {
+  display: inline;
+  padding: 22px 30px 26px;
+}
+
+.main-navigator li:hover,
+.main-navigator li:focus {
   background-color: #293449;
 }
 
@@ -62,15 +105,69 @@ li {
 }
 
 .head-line {
+  width: 196px;
+  height: 60px;
   font-family: Cuprum;
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
   font-stretch: normal;
+  line-height: 1.44;
   letter-spacing: normal;
+  text-align: left;
   color: #ee3643;
 }
 
+.phone {
+  width: 151px;
+  height: 21px;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #e9292a;
+}
+
+.adress {
+  width: 250px;
+  height: 13px;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #32425c;
+}
+
+.user-navigation li:first-child,
+.user-navigation li:last-child {
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.user-navigation a {
+  color: #000000;
+}
+
+header {
+  background-color: #f4f7f9;
+  width: 100%;
+  height: 320px;
+  opacity: 0.9;
+}
 .about-company {
   width: 519px;
   height: 293px;
@@ -119,18 +216,17 @@ div a {
 }
 
 .button {
+  display: block;
   width: 220px;
   height: 38px;
   background-color: #ee3643;
   border-radius: 3px;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
+  color: #ffffff;
+  line-height: 38px;
 }
 
-div a {
+.button.callback-link{
   width: 300px;
 }
-
-
-
