@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
   <main>
     <header>
-      <nav>
+      <nav class="site-navigation">
         <a href="index.html">
           <img src="img/content/logo.png">
         </a>
@@ -47,13 +51,17 @@
         <li><a href="http://www.autotrading.ru" target="_blank">Автотрейдинг</a></li>
         <li><a href="https://www.jde.ru" target="_blank">ЖелДорЭкспедиция</a></li>
       </ul>
-      <a href="#">Подробнее о компании"</a>
+      <div class="button">
+        <a href="#">Подробнее о компании</a>
+      </div>
     </section>
     <section class="map-and-contact">
       <h2 class="contacts-map">Контакты</h2>
       <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
       <img src="img/map.jpg">
-      <a href="#">Заблудились? Напишите нам</a>
+      <div class="button">
+        <a href="#">Заблудились? Напишите нам</a>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -61,8 +69,8 @@
       <a href="index.html">
         <img src="img/content/logo.png">
       </a>
-      <a class="phone" href="tel:+78125550555">+7(812)-555-05-55</a>
       <address class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</address>
+      <a class="phone" href="tel:+78125550555">+7(812)-555-05-55</a>
       <ul class="main-navigator-footer">
         <li class="main-company"><a href="#">Компания</a></li>
         <li class="main-news"><a href="#">Новости</a></li>
@@ -79,6 +87,7 @@
     </div>
     <div class="footer-down">
       <p class="footer-rights">
+        <span>&#169;</span>
         2010-2017 компания «Техномарт»<br>
         Все права защищены
       </p>
@@ -91,11 +100,11 @@
       </div>
       <p class="footer-copyright">
         <b>Обратная связь:</b>
-        <a class="button" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="footer-button" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p class="footer-copyright">
         <b>Разработано:</b>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
+        <a class="footer-button" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
       </p>
     </div>
 
