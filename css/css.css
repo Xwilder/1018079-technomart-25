@@ -1,0 +1,136 @@
+body {
+  font-family: 'Cuprum', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation a,
+.main-navigator a {
+  color: #ffffff;
+}
+
+.site-navigation {
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.marker a:hover,
+.basket a:hover {
+  background-color: #212a3a;
+}
+
+.checkout {
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+}
+.checkout a:hover,
+.checkout a:focus {
+  background-color: #5fbb2d;
+}
+
+.main-navigator {
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+}
+
+.mine-navigation a:hover,
+.mine-navigation a:focus {
+  background-color: #293449;
+}
+
+li {
+  list-style: none;
+}
+
+.head-line {
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #ee3643;
+}
+
+.about-company {
+  width: 519px;
+  height: 293px;
+}
+
+.head-line-about-company,
+.contacts-map{
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.about-company p,
+.map-and-contact p {
+  font-size: 13px;
+}
+
+.transport-companies {
+  font-size: 18px;
+}
+
+
+.footer-up {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.footer-down {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.footer-down a,
+.footer-up a {
+  color: #ffffff;
+}
+
+div a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.main-navigator-footer2 a,
+.footer-copyright a {
+  color: #ffd180;
+}
+
+.button {
+  width: 220px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+div a {
+  width: 300px;
+}
+
+
+
