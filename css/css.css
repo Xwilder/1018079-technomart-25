@@ -11,8 +11,20 @@ body {
   background-color: #ffffff;
 }
 
+/*body > * { background: rgba(255, 0, 0, 0.3); }*/
+/*body > * > * { background: rgba(255, 255, 0, 0.3);}*/
+/*body > * > * > * { background: rgba(0, 0, 255, 0.3); }*/
+/*body > * > * > * > * { background: rgba(0, 255, 255, 0.3); }*/
+
 a {
   text-decoration: none;
+}
+
+header {
+  background-color: #f4f7f9;
+  width: 100%;
+  height: 320px;
+  opacity: 0.9;
 }
 
 .site-navigation a,
@@ -21,20 +33,29 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   width: 100%;
-  height: 42px;
+  height: auto;
+
   background-color: #293449;
   text-align: center;
-
   font-size: 17px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
-
   color: #ffffff;
+  padding: 0 10px;
+}
 
-  background-color: #293449;
+.container {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  width: 100%;
+  max-width: 940px;
 }
 
 .marker:hover,
@@ -42,9 +63,9 @@ a {
   background-color: #212a3a;
 }
 .index {
+  display: inline-block;
   text-transform: uppercase;
   font-size: 19px;
-  display: inline-block;
   width: 220px;
   height: 42px;
   line-height: 42px;
@@ -58,23 +79,18 @@ a {
 
 .search {
   display: inline-block;
-  width: 270px;
-  height: 42px;
+  width: auto;
   line-height: 42px;
   text-align: center;
 }
 .marker,
 .basket {
   display: inline-block;
-  width: 150px;
-  height: 42px;
   line-height: 42px;
   text-align: center;
 }
 .checkout {
   display: inline-block;
-  width: 150px;
-  height: 42px;
   background-color: #63a63e;
   line-height: 42px;
   text-align: center;
@@ -85,6 +101,7 @@ a {
 
 .main-navigator {
   width: 940px;
+  font-size: 17px;
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
   margin: 0 auto;
@@ -105,9 +122,6 @@ li {
 }
 
 .head-line {
-  display: inline-block;
-  width: 196px;
-  height: 60px;
   font-family: Cuprum;
   font-size: 16px;
   font-weight: normal;
@@ -120,8 +134,6 @@ li {
 }
 
 .phone {
-  width: 151px;
-  height: 21px;
   font-family: Cuprum;
   font-size: 21px;
   font-weight: normal;
@@ -140,8 +152,6 @@ li {
 }
 
 .adress {
-  width: 250px;
-  height: 13px;
   font-family: Cuprum;
   font-size: 14px;
   font-weight: normal;
@@ -149,13 +159,11 @@ li {
   font-stretch: normal;
   line-height: 1.71;
   letter-spacing: normal;
-  text-align: center;
   color: #32425c;
 }
 
 .user-navigation li:first-child,
 .user-navigation li:last-child {
-  display: inline-block;
   font-family: Cuprum;
   font-size: 21px;
   font-weight: normal;
@@ -170,12 +178,6 @@ li {
   color: #000000;
 }
 
-header {
-  background-color: #f4f7f9;
-  width: 100%;
-  height: 320px;
-  opacity: 0.9;
-}
 .about-company {
   width: 519px;
   height: 293px;
@@ -224,9 +226,6 @@ div a {
 }
 
 .button {
-  display: block;
-  width: 220px;
-  height: 38px;
   background-color: #ee3643;
   border-radius: 3px;
   text-align: center;
