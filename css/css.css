@@ -24,7 +24,6 @@ header {
   background-color: #f4f7f9;
   width: 100%;
   height: 320px;
-  opacity: 0.9;
 }
 
 .site-navigation a,
@@ -36,7 +35,6 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 100%;
   height: auto;
 
   background-color: #293449;
@@ -54,6 +52,7 @@ header {
   display: flex;
   align-content: center;
   flex-direction: row;
+  justify-content: inherit;
   width: 100%;
   max-width: 940px;
 }
@@ -63,7 +62,11 @@ header {
   background-color: #212a3a;
 }
 .index {
-  display: inline-block;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+
   text-transform: uppercase;
   font-size: 19px;
   width: 220px;
@@ -76,21 +79,74 @@ header {
 .index:hover {
   background-color: #ca2c37;
 }
+.container form {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+
+  position: relative;
+  margin: 0 auto;
+}
+
+form input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
 
 .search {
-  display: inline-block;
-  width: auto;
-  line-height: 42px;
-  text-align: center;
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
 }
+
+.search-button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+/*.search-button::before {*/
+  /*background: url("img/svg/icon-search.svg") no-repeat;*/
+/*}*/
+
+form input:hover {
+  background-color: #ffffff;
+}
+
+/*.search {*/
+  /*display: flex;*/
+  /*align-content: center;*/
+  /*flex-direction: row;*/
+  /*justify-content: center;*/
+
+  /*width: auto;*/
+  /*height: 42px;*/
+  /*line-height: 42px;*/
+  /*text-align: center;*/
+/*}*/
 .marker,
 .basket {
-  display: inline-block;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 150px;
   line-height: 42px;
   text-align: center;
 }
 .checkout {
-  display: inline-block;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 150px;
   background-color: #63a63e;
   line-height: 42px;
   text-align: center;
@@ -99,29 +155,25 @@ header {
   background-color: #5fbb2d;
 }
 
-.main-navigator {
+.top-header {
+  display: flex;
   width: 940px;
-  font-size: 17px;
-  box-shadow: inset 0px -5px 0 0 #293449;
-  background-color: #32425c;
-  margin: 0 auto;
-}
-
-.main-navigator li {
-  display: inline-block;
-  padding: 22px 30px 26px;
-}
-
-.main-navigator li:hover,
-.main-navigator li:focus {
-  background-color: #293449;
-}
-
-li {
-  list-style: none;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 47px;
+  padding-bottom: 43px;
+  margin: 0px;
 }
 
 .head-line {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+
   font-family: Cuprum;
   font-size: 16px;
   font-weight: normal;
@@ -131,6 +183,21 @@ li {
   letter-spacing: normal;
   text-align: left;
   color: #ee3643;
+}
+
+.top-header .contacts {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts a {
+  display: inline-block;
+  border: 2px solid #ffffff;
+  padding: 13px 52px 11px 74px;
 }
 
 .phone {
@@ -145,12 +212,6 @@ li {
   color: #e9292a;
 }
 
-.contacts a {
-  display: inline-block;
-  border: 2px solid #ffffff;
-  padding: 13px 52px 11px 74px;
-}
-
 .adress {
   font-family: Cuprum;
   font-size: 14px;
@@ -162,8 +223,24 @@ li {
   color: #32425c;
 }
 
-.user-navigation li:first-child,
-.user-navigation li:last-child {
+.user-navigation {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.user-navigation li {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+
   font-family: Cuprum;
   font-size: 21px;
   font-weight: normal;
@@ -172,15 +249,100 @@ li {
   line-height: 1;
   letter-spacing: normal;
   text-align: left;
+
+  height: 45px;
+}
+
+.login-link {
+  width: 121px;
+  font-family: Cuprum;
+  font-size: 21px;
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+
+.check-in-link {
+  width: 150px;
+  font-size: 21px;
+  color: black;
+  background-color: white;
+  text-align: center;
+
 }
 
 .user-navigation a {
   color: #000000;
 }
 
+.main-navigator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  max-width: 900px;
+  height: 60px;
+  font-size: 17px;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigator li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.main-navigator-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.main-navigator li:hover,
+.main-navigator li:focus {
+  background-color: #293449;
+}
+
+li {
+  list-style: none;
+}
+
+.top-main {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+
+  padding-bottom: 86px;
+}
+
+
+
 .about-company {
-  width: 519px;
-  height: 293px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 540px;
+  padding-right: 100px;
+}
+
+.map-and-contact {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 300px;
+}
+
+.transport-companies a {
+  color: #000000;
 }
 
 .head-line-about-company,
@@ -198,7 +360,6 @@ li {
 .transport-companies {
   font-size: 18px;
 }
-
 
 .footer-up {
   background-color: #32425c;
@@ -232,8 +393,14 @@ div a {
   text-transform: uppercase;
   color: #ffffff;
   line-height: 38px;
+  width: 220px;
 }
 
 .button.callback-link{
   width: 300px;
+  margin-top: 40px;
+}
+
+.button:hover {
+  background-color: #ca2c37;
 }
