@@ -20,7 +20,10 @@ a {
   text-decoration: none;
 }
 
-header {
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f4f7f9;
   width: 100%;
   height: 320px;
@@ -37,6 +40,7 @@ header {
   flex-direction: row;
   height: auto;
 
+width: 100%;
   background-color: #293449;
   text-align: center;
   font-size: 17px;
@@ -73,8 +77,9 @@ header {
   height: 42px;
   line-height: 42px;
   text-align: center;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  border-bottom: 5px rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+  margin-bottom: -5px
 }
 .index:hover {
   background-color: #ca2c37;
@@ -114,7 +119,7 @@ form input {
   /*background: url("img/svg/icon-search.svg") no-repeat;*/
 /*}*/
 
-form input:hover {
+form:hover input {
   background-color: #ffffff;
 }
 
@@ -163,7 +168,7 @@ form input:hover {
   justify-content: space-between;
   padding-top: 47px;
   padding-bottom: 43px;
-  margin: 0px;
+  margin: 0 auto;
 }
 
 .head-line {
@@ -183,6 +188,8 @@ form input:hover {
   letter-spacing: normal;
   text-align: left;
   color: #ee3643;
+  padding: 0 52px;
+  margin: 0;
 }
 
 .top-header .contacts {
@@ -192,6 +199,8 @@ form input:hover {
   align-content: center;
   flex-direction: column;
   justify-content: center;
+
+  padding-right: 30px;
 }
 
 .contacts a {
@@ -361,14 +370,70 @@ li {
   font-size: 18px;
 }
 
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
 .footer-up {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
   background-color: #32425c;
   color: #ffffff;
 }
 
+.top-footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 940px;
+  padding: 0 10px;
+}
+
+.main-navigator-footer,
+.main-navigator-footer2{
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 940px;
+  padding: 0 10px;
+}
+
 .footer-down {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+
   background-color: #293449;
   color: #ffffff;
+}
+.bottom-footer-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-adress address{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  color: white;
 }
 
 .footer-down a,
