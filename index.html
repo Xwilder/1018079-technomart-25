@@ -28,12 +28,11 @@
         <h1 class="head-line">Интернет магазин<br> строительных материалов<br> и инструментов для дома</h1>
         <section class="contacts">
           <a class="phone" href="tel:+78125550555"><span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/></svg></span>+7(812)-555-05-55</a>
-          <address class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</address>
+          <address class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</address>
         </section>
         <ul class="user-navigation">
-          <li ><a href="#" class="login-link">Вход</a></li>
-          <li ><a href="#" class="
-check-in-link">Регистрация</a></li>
+          <li class="entry"><a href="#" class="login-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>Вход</a></li>
+          <li class="check-in"><a href="#" class="check-in-link">Регистрация</a></li>
         </ul>
       </div>
 
@@ -130,29 +129,64 @@ check-in-link">Регистрация</a></li>
     <!--<h2 class="visually-hidden">Как до нас добраться</h2>-->
     <!--<span class="modal-close">x</span>-->
   <!--</section>-->
+  <section class="<!--pop-up--> map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6254747030198!2d30.32208930752843!3d59.93858399337944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560181613497!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <button class="close-button"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
+  </section>
 
   <!--<section id="modal-container" class="pop-up letter">-->
-    <!--<form class="letter-from-the-client">-->
+    <!--<form class="letter-from-the-client" id="myForm">-->
       <!--<div class="youre-name">-->
         <!--<label>-->
           <!--<span>Ваше имя:</span>-->
-          <!--<input type="text" name="name" placeholder="Имя Фамилия">-->
+          <!--<input type="text" name="name" placeholder="Имя Фамилия" class="name">-->
         <!--</label>-->
         <!--<label>-->
           <!--<span>Ваш e-mail:</span>-->
-          <!--<input type="text" name="e-mail" placeholder="email@example.com">-->
+          <!--<input type="text" name="e-mail" placeholder="email@example.com" class="e-mail">-->
         <!--</label>-->
       <!--</div>-->
       <!--<label class="label-massege">-->
         <!--<span>Текст письма:</span>-->
-        <!--<textarea name="letter" placeholder="В свободной форме" ></textarea>-->
+        <!--<textarea name="letter" placeholder="В свободной форме" class="input-letter" ></textarea>-->
       <!--</label>-->
+      <!--<button class="red-button to-send" type="submit" value="Отправить">Отправить</button>-->
     <!--</form>-->
     <!--<div class="pop-up-button">-->
-      <!--<button class="red-button" value="Отправить">Отправить</button>-->
+      <!--<button class="red-button to-send" type="submit" value="Отправить">Отправить</button>-->
     <!--</div>-->
     <!--<button class="close-button"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>-->
   <!--</section>-->
+  <script>
+    var letter = document.querySelector(".callback-link");
+    var popup = document.querySelector(".pop-up.letter");
+//    var close = document.querySelector(".close-button");
+
+
+
+    letter.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("pop-up-show");
+      var name = popup.querySelector("input[name='name']");
+      var email = popup.querySelector("input[name='email']");
+      var letter = popup.querySelector("input[name='letter'");
+      var close = document.querySelector(".close-button");
+      name.focus();
+    } );
+
+    form.addEventListener("submit", function (evt) {
+      if (!name.value || !email.value || !letter.value) {
+        evt.preventDefault();
+        console.log("введи данные")
+      }
+    })
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("pop-up-show");
+    } );
+
+  </script>
   </body>
 </html>
 
