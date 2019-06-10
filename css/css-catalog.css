@@ -347,6 +347,10 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -387,4 +391,80 @@ article .flag-new {
   background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+
+.power-supply {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.filters-checkbox {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.manufacturers {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.manufacturers .filters-checkbox,
+.power-supply .filters-radio {
+  padding-bottom: 17px;
+}
+
+.filters-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 26px;
+  height: 26px;
+
+  background: url("../img/svg/checkbox-off.svg") no-repeat;
+}
+
+.filters-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 26px;
+  height: 26px;
+
+  background: url("../img/svg/checkbox-on.svg") no-repeat;
+}
+
+.filters-radio {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.filters-radio input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 26px;
+  height: 26px;
+
+  background: url("../img/svg/radio-off.svg") no-repeat;
+}
+
+.filters-radio input[type="radio"]:checked + .radio-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 26px;
+  height: 26px;
+
+  background: url("../img/svg/radio-on.svg") no-repeat;
 }
