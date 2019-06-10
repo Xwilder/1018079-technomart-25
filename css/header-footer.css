@@ -183,7 +183,6 @@ form input:focus {
 
 .head-line {
   display: flex;
-  width: 300px;
   height: 60px;
   align-content: center;
   flex-direction: row;
@@ -204,19 +203,18 @@ form input:focus {
 
 .top-header .contacts {
   display: flex;
-  width: 300px;
   height: 60px;
   align-content: center;
   flex-direction: column;
   justify-content: center;
 
-  padding-right: 30px;
+  width: 270px;
 }
 
-.contacts a {
+.contacts .phone {
   display: inline-block;
-  border: 2px solid #ffffff;
-  padding: 13px 0;
+  border: 3px solid #ffffff;
+  padding: 8px 0;
 }
 
 .phone {
@@ -231,10 +229,6 @@ form input:focus {
   color: #e9292a;
 }
 
-.contacts .phone {
-  border: 3px solid #ffffff;
-}
-
 .phone span {
   padding: 13px 40px 13px 16px;
 }
@@ -247,6 +241,7 @@ form input:focus {
   font-stretch: normal;
   line-height: 1.71;
   letter-spacing: normal;
+  text-align: center;
   color: #32425c;
 }
 
@@ -280,8 +275,20 @@ form input:focus {
   height: 45px;
 }
 
+.entry {
+  padding-right: 10px;
+}
+
+.login-link svg {
+  padding: 14px;
+}
+
 .login-link {
-  width: 121px;
+  display: flex;
+  flex-direction: row;
+  line-height: 45px;
+  padding-right: 27px;
+  vertical-align: middle;
   font-family: Cuprum;
   font-size: 21px;
   color: black;
@@ -290,12 +297,18 @@ form input:focus {
 }
 
 .check-in-link {
-  width: 150px;
+  padding: 11px 25px;
   font-size: 21px;
   color: black;
   background-color: white;
   text-align: center;
+}
 
+.login-link:hover,
+.check-in-link:hover,
+.login-link:hover path {
+  color: #ee3643;
+  fill: #32425c;
 }
 
 .user-navigation a {
@@ -326,7 +339,7 @@ form input:focus {
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 30px;
+  padding: 0 29px;
 }
 
 .main-navigator li:hover,
@@ -460,11 +473,7 @@ div a {
 .button {
   line-height: 38px;
   width: 220px;
-}
-
-.button.callback-link{
-  width: 300px;
-  margin-top: 40px;
+  text-align: center;
 }
 
 .footer-social {
