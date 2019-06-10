@@ -31,12 +31,11 @@
     <h1 class="head-line">Интернет магазин<br> строительных материалов<br> и инструментов для дома</h1>
     <section class="contacts">
       <a class="phone" href="tel:+78125550555"><span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/></svg></span>+7(812)-555-05-55</a>
-      <address class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</address>
+      <address class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</address>
     </section>
     <ul class="user-navigation">
-      <li ><a href="#" class="login-link">Вход</a></li>
-      <li ><a href="#" class="
-check-in-link">Регистрация</a></li>
+      <li class="entry"><a href="#" class="login-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>Вход</a></li>
+      <li class="check-in"><a href="#" class="check-in-link">Регистрация</a></li>
     </ul>
   </div>
 
@@ -67,31 +66,31 @@ check-in-link">Регистрация</a></li>
       <div class="price">
         <h3>Цена:</h3>
       </div>
-      <div>
+      <div class="manufacturers">
         <h3>Производители:</h3>
-        <label>
-          Bosch<input type="checkbox" name="Bosch">
+        <label class="filters-checkbox">
+          <input type="checkbox" name="manufacturers" value="Bosch" class="visually-hidden"><span class="checkbox-indicator"></span>Bosch
         </label>
-        <label>
-          Интерскол<input type="checkbox" name="Interskol">
+        <label class="filters-checkbox">
+          <input type="checkbox" name="manufacturers" value="Interskol" class="visually-hidden"><span class="checkbox-indicator"></span>Интерскол
         </label>
-        <label>
-          Makita<input type="checkbox" name="Makita">
+        <label class="filters-checkbox">
+          <input type="checkbox" name="manufacturers" value="Makita" class="visually-hidden"><span class="checkbox-indicator"></span>Makita
         </label>
-        <label>
-          Dewalt<input type="checkbox" name="Dewalt">
+        <label class="filters-checkbox">
+          <input type="checkbox" name="manufacturers" value="Dewalt" class="visually-hidden"><span class="checkbox-indicator"></span>Dewalt
         </label>
-        <label>
-          Hitachi<input type="checkbox" name="Hitachi">
+        <label class="filters-checkbox">
+          <input type="checkbox" name="manufacturers" value="Hitachi" class="visually-hidden"><span class="checkbox-indicator"></span>Hitachi
         </label>
       </div>
-      <div>
+      <div class="power-supply">
         <h3>Питание:</h3>
-        <label>
-          Аккумуляторные<input type="radio" name="battery">
+        <label class="filters-radio">
+          <input type="radio" name="power-supply" value="battaty" class="visually-hidden"><span class="radio-indicator"></span>Аккумуляторные
         </label>
-        <label>
-          Сетевые<input type="radio" name="wired">
+        <label  class="filters-radio">
+          <input type="radio" name="power-supply" value="wired" class="visually-hidden"><span class="radio-indicator"></span>Сетевые
         </label>
       </div>
     </section>
