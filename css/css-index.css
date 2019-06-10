@@ -1,24 +1,59 @@
+.top-main * {
+  margin: 0;
+}
+
 .about-company {
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 
   width: 540px;
+  min-height: 370px;
   padding-right: 100px;
+  padding-top: 82px;
 }
 
 .map-and-contact {
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 
+  min-height: 370px;
   width: 300px;
+  padding-top: 82px;
+}
+
+.map-and-contact p {
+  margin: 0;
 }
 
 .transport-companies a {
   color: #000000;
+  font-size: 18px;
+}
+
+.transport-companies a:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  left: 0;
+  bottom: 11px;
+}
+
+.transport-companies {
+  font-size: 18px;
+  padding: 0;
+}
+
+.transport-companies li {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 36px;
 }
 
 .head-line-about-company,
@@ -26,34 +61,16 @@
   font-size: 30px;
   text-align: left;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.button.callback-link{
+  width: 300px;
 }
 
 .about-company p,
 .map-and-contact p {
   font-size: 13px;
-}
-
-.transport-companies {
-  font-size: 18px;
-}
-
-.pop-up {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 620px;
-
-
-  border-top: 7px solid #ff5357;
-  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-  background-color: white;
-
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 200px;
 }
 
 .pop-up.letter {
@@ -157,9 +174,41 @@
   background-color: #ca2c37;
 }
 
-.transport-companies li {
-  position: relative;
+.pop-up {
+  display: none;
+}
 
-  margin-bottom: 15px;
-  padding-left: 20px;
+.pop-up-show{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 620px;
+
+  border-top: 7px solid #ff5357;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  background-color: white;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -100px;
+}
+
+.map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 940px;
+
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  background-color: white;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 60px;
 }
