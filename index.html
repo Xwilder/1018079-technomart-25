@@ -8,6 +8,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <script src="js/all.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -62,7 +63,7 @@
         <section class="map-and-contact">
           <h2 class="contacts-map">Контакты</h2>
           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-          <img src="img/map.jpg">
+          <a class="map-link"><img src="img/map.jpg"></a>
           <a href="#modal-container" class="button callback-link red-button">Заблудились? Напишите нам</a>
         </section>
       </div>
@@ -125,16 +126,12 @@
     <!--<span class="modal-close">x</span>-->
   <!--</section>-->
 
-  <!--<section class="modal modal-map">-->
-    <!--<h2 class="visually-hidden">Как до нас добраться</h2>-->
-    <!--<span class="modal-close">x</span>-->
-  <!--</section>-->
-  <section class="<!--pop-up--> map-section">
+  <section class="popup-general map-section">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6254747030198!2d30.32208930752843!3d59.93858399337944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560181613497!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     <button class="close-button"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
   </section>
 
-  <section id="modal-container" class="pop-up letter">
+  <section id="modal-container" class="popup-general pop-up letter">
     <form class="letter-from-the-client" id="myForm">
       <div class="youre-name">
         <label>
@@ -150,43 +147,12 @@
         <span>Текст письма:</span>
         <textarea name="letter" placeholder="В свободной форме" class="input-letter" ></textarea>
       </label>
-      <button class="red-button to-send" type="submit" value="Отправить">Отправить</button>
     </form>
     <div class="pop-up-button">
       <button class="red-button to-send" type="submit" value="Отправить">Отправить</button>
     </div>
     <button class="close-button"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
   </section>
-  <script>
-    var letter = document.querySelector(".callback-link");
-    var popup = document.querySelector(".pop-up.letter");
-    var close = document.querySelector(".close-button");
-
-
-
-    letter.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("pop-up-show");
-      var name = popup.querySelector("input[name='name']");
-      var email = popup.querySelector("input[name='email']");
-      var letter = popup.querySelector("input[name='letter'");
-      var close = document.querySelector(".close-button");
-      name.focus();
-    } );
-
-    form.addEventListener("submit", function (evt) {
-      if (!name.value || !email.value || !letter.value) {
-        evt.preventDefault();
-        console.log("введи данные")
-      }
-    })
-
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("pop-up-show");
-    } );
-
-  </script>
   </body>
 </html>
 
