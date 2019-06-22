@@ -539,7 +539,8 @@ div a {
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-left: 0;
   margin: 0;
   margin-left: 20px;
   max-width: 960px;
@@ -673,7 +674,6 @@ img {
   height: auto;
 }
 
-.reclame,
 .popular-product,
 .popular-manufacturers {
   display: flex;
@@ -730,94 +730,4 @@ img {
   width: 100%;
 }
 
-.service-color {
-  display: flex;
-  justify-content: center;
-  min-height: 522px;
-  background-color: #f4f7f9;
-}
 
-.service {
-  display: flex;
-  flex-direction: column;
-  width: 940px;
-}
-
-.service-header h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-}
-.service-header p,
-.service-footer p {
-  font-size: 13px;
-  line-height: 24px;
-  font-family: 'PTSans', sans-serif;
-}
-.service-footer p {
-  max-width: 380px;
-}
-.service-footer h3 {
-  font-size: 36px;
-  color: #32425c;
-  text-transform: uppercase;
-}
-
-
-.service-parameter div {
-  width: 630px;
-  max-height: 185px;
-}
-
-.service-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.service-parameter img {
-  position: relative;
-  top: -150px;
-  left: 150px;
-}
-
-.service-main {
-  width: 240px;
-  height: 280px;
-  padding-top: 70px;
-}
-
-.service-main img {
-  position: relative;
-  left: 230px;
-  bottom: 230px;
-}
-
-.service-main ul {
-  padding: 0;
-  margin: 0;
-}
-
-.service-main li {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  width: 240px;
-  min-height: 61px;
-  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
-  background-color: #32425c;
-}
-
-.service-main button {
-  background: none;
-  border: none;
-
-  width: 100%;
-  height: 100%;
-  font-family: Cuprum;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1.43;
-  text-align: left;
-  color: #ffffff;
-}
