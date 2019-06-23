@@ -343,3 +343,58 @@ article .flag-new {
 
   background: url("../img/svg/radio-on.svg") no-repeat;
 }
+
+.number-page {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.number.last {
+  width: 140px;
+  height: 38px;
+}
+
+.word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f6f8;
+  width: 100%;
+}
+
+.word-press {
+  width: 940px;
+}
+
+.word-press h4 {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 67px;
+}
+
+.word-press p {
+  font-family: 'PTSans', sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  text-transform: none;
+  text-align: left;
+  letter-spacing: -0.8px;
+  margin-bottom: 73px;
+}
