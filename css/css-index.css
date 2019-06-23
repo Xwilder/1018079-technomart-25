@@ -338,6 +338,8 @@
   grid-gap: 20px;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(3, 125px);
+
+  padding-top: 60px;
 }
 .materials {
   grid-column-start: 1;
@@ -474,4 +476,61 @@
   margin: 0;
   padding-top: 8px;
   padding-left: 24px;
+}
+
+.drills a {
+  position: relative;
+  left: 25px;
+  bottom: -124px;
+}
+
+.next {
+  position: relative;
+  left: 25px;
+  top: 0;
+}
+
+.previous {
+  position: relative;
+  right: -575px;
+  top: -47px;
+}
+
+.drills-drills,
+.drills-perf {
+  height: 115px;
+}
+
+.circle1,
+.circle2 {
+  display: block;
+  background-color: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.circle1 {
+  position: relative;
+  left: 295px;
+  bottom: -10px;
+}
+
+.circle2 {
+  position: relative;
+  left: 315px;
+  bottom: 0;
+}
+
+.circle3 {
+  display: block;
+  background-color: #ee3643;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+
+  position: relative;
+  left: 295px;
+  bottom: 10px;
 }
