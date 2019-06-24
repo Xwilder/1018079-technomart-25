@@ -72,10 +72,24 @@
   <h1 class="page-title">Перфораторы</h1>
   <div class="block-catalog">
     <section class="filters">
-      <h2>Фильтр:</h2>
+      <div class="filters-headline">
+        <h2>Фильтр:</h2>
+      </div>
       <div class="price">
         <h3>Цена:</h3>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+          <div class="price-controls">
+            <input class="min-price" type="text" value="5 000">
+            - <input class="max-price" type="text" value="15 000">
+          </div>
+        </div>
       </div>
+      <div class="line"></div>
       <div class="manufacturers">
         <h3>Производители:</h3>
         <label class="filters-checkbox">
@@ -90,10 +104,11 @@
         <label class="filters-checkbox">
           <input type="checkbox" name="manufacturers" value="Dewalt" class="visually-hidden"><span class="checkbox-indicator"></span>Dewalt
         </label>
-        <label class="filters-checkbox">
+        <label class="filters-checkbox last">
           <input type="checkbox" name="manufacturers" value="Hitachi" class="visually-hidden"><span class="checkbox-indicator"></span>Hitachi
         </label>
       </div>
+      <div class="line"></div>
       <div class="power-supply">
         <h3>Питание:</h3>
         <label class="filters-radio">
@@ -102,8 +117,9 @@
         <label  class="filters-radio">
           <input type="radio" name="power-supply" value="wired" class="visually-hidden"><span class="radio-indicator"></span>Сетевые
         </label>
-        <button>Показать</button>
       </div>
+      <button>Показать</button>
+
     </section>
     <div class="rights-colums">
       <div class="filters-in-catalog">
