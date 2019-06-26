@@ -257,9 +257,33 @@ form input:focus {
 }
 
 .entry-out {
-  max-width: 300px;
-  max-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.entry-out a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 45px;
   line-height: 45px;
+  background-color: #ffffff;
+
+  font-family: 'Cuprum', sans-serif;
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+}
+
+.entry-out svg:first-of-type {
+  padding: 14px;
+}
+
+.entry-out svg:last-of-type {
+  padding: 14px 10px 14px 0px;
 }
 
 .in-down {
@@ -293,7 +317,6 @@ form input:focus {
 
 .user-navigation.in {
   flex-direction: column;
-
 }
 
 .entry {
@@ -485,6 +508,25 @@ li {
 div a {
   color: #ffffff;
   font-size: 14px;
+}
+
+.in-down a {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: left;
+  color: #32425c;
+  text-decoration: underline;
+  text-decoration-color: #32425c;
+}
+
+.dotter {
+  width: 4px;
+  height: 5px;
+  background-color: #32425c;
+  border-radius: 50%;
+  margin: 0 14px;
+  margin-top: 10px;
 }
 
 .main-navigator-footer2 a,
