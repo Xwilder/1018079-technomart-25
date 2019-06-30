@@ -7,6 +7,13 @@ window.onload = function () {
   var submit = document.querySelector(".to-send");
   var map = document.querySelector(".map-link");
   var popupmap = document.querySelector(".popup-general.map-section");
+  var email = popup.querySelector("input[name='e-mail']");
+  var letter = popup.querySelector("textarea");
+
+  var serviceA = document.querySelectorAll(".serv");
+  var serviceLi = document.querySelectorAll(".service-active");
+  var serviceParameter = document.querySelectorAll(".JScheked");
+
 
   letter.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -25,6 +32,7 @@ window.onload = function () {
     closeBtn.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.remove("pop-up-show");
+      popup.classList.remove("modal-error");
     });
 
     window.addEventListener("keydown", function (evt) {
@@ -32,6 +40,7 @@ window.onload = function () {
         evt.preventDefault();
         if (popup.classList.contains("pop-up-show")) {
           popup.classList.remove("pop-up-show");
+          popup.classList.remove("modal-error");
         }
       }
     });
@@ -41,12 +50,27 @@ window.onload = function () {
   form.addEventListener("submit", function (evt) {
     if (!name.value || !email.value || !letter.value) {
       evt.preventDefault();
+      popup.classList.add("modal-error");
       console.log("Нужно ввести данные");
     }
   } );
 
-  submit.addEventListener('click', function(){
-    form.submit();
-  });
+  serviceParameter[0].classList.add("active");
 
+    for (var i=0; i<serviceLi.length; i++) {
+      serviceLi[i].addEventListener("click",
+      (function (Index) {
+        return function (evt) {
+          evt.preventDefault();
+          for (var i=0; i<serviceLi.length; i++) {
+            serviceParameter[i].classList.remove("active");
+            serviceLi[i].classList.remove("selected");
+            serviceA[i].classList.remove("sel");
+          }
+          serviceParameter[Index].classList.add("active");
+          serviceLi[Index].classList.add("selected");
+          serviceA[Index].classList.add("sel");
+        }
+      })(i));
+    }
 };
