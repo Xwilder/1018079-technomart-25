@@ -257,13 +257,23 @@ input[type="radio"].visually-hidden {
   padding-right: 17px;
 }
 
-.filters-in-catalog a {
-  color: #000000;
+.sorting a {
+  color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
+}
+
+.sorting a:hover {
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #ee3643;
 }
 
 .filters-in-catalog span {
   padding-left: 19px;
+  font-family: 'PTSans', sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: left;
+  color: #000000;
 }
 
 .filters-in-catalog li {
@@ -526,4 +536,8 @@ price{
   line-height: 1.25;
   text-align: center;
   margin-top: 58px;
+}
+
+.filters-checkbox input[type="checkbox"]:hover + .checkbox-indicator svg{
+  fill: #000000;
 }
