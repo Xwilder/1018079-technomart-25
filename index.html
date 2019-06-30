@@ -254,29 +254,29 @@
           </div>
           <div class="service-footer">
             <div class="service-main">
-              <ul>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Кредит</a></li>
+              <ul class="service-ul">
+                <li class="service-active service-delivery"><a class="serv" href="#">Доставка</a></li>
+                <li class="service-active service-guarantee"><a class="serv" href="#">Гарантия</a></li>
+                <li class="service-active service-credit"><a class="serv" href="#">Кредит</a></li>
               </ul>
               <img src="img/shadow.png">
             </div>
             <div class="service-parameter">
-              <div class="delivery">
+              <div class="delivery JScheked">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
                 <img src="img/content/car.png">
               </div>
-              <!--<div class="guarantee">-->
-                <!--<h3>Гарантия</h3>-->
-                <!--<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>-->
-                <!--<img src="img/content/guarantee.png">-->
-              <!--</div>-->
-              <!--<div class="credit">-->
-                <!--<h3>Кредит</h3>-->
-                <!--<p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>-->
-                <!--<button class="red-button">Отправить заявку</button>-->
-                <!--<img src="img/content/credit.png">-->
+              <div class="guarantee JScheked">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                <img src="img/content/guarantee.png">
+              </div>
+              <div class="credit JScheked">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                <button class="red-button">Отправить заявку</button>
+                <img src="img/content/credit.png">
               </div>
             </div>
 
@@ -367,13 +367,13 @@
   </section>
 
   <section id="modal-container" class="popup-general pop-up letter">
-    <form class="letter-from-the-client" id="myForm">
+    <form class="letter-from-the-client" id="myForm" action="https://echo.htmlacademy.ru" method="post">
       <div class="youre-name">
-        <label>
+        <label class="youre-name-label">
           <span>Ваше имя:</span>
           <input type="text" name="name" placeholder="Имя Фамилия" class="name">
         </label>
-        <label>
+        <label class="youre-e-mail-label">
           <span>Ваш e-mail:</span>
           <input type="text" name="e-mail" placeholder="email@example.com" class="e-mail">
         </label>
@@ -382,10 +382,11 @@
         <span>Текст письма:</span>
         <textarea name="letter" placeholder="В свободной форме" class="input-letter" ></textarea>
       </label>
+      <div class="pop-up-button">
+        <button class="red-button to-send" type="submit" value="Отправить">Отправить</button>
+      </div>
     </form>
-    <div class="pop-up-button">
-      <button class="red-button to-send" type="submit" value="Отправить">Отправить</button>
-    </div>
+
     <button class="close-button"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
   </section>
   </body>
