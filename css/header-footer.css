@@ -80,6 +80,13 @@ a {
   background-color: #ee3643;
   margin-bottom: -5px
 }
+
+.top-footer .index {
+  height: 68px;
+  line-height: 68px;
+  font-size: 21px;
+}
+
 .index:hover {
   background-color: #ca2c37;
 }
@@ -172,6 +179,7 @@ form input:focus {
 .top-header {
   display: flex;
   width: 940px;
+  height: 65px;
   align-content: center;
   flex-direction: row;
   justify-content: space-between;
@@ -182,7 +190,7 @@ form input:focus {
 
 .head-line {
   display: flex;
-  height: 60px;
+  height: 65px;
   align-content: center;
   flex-direction: row;
   justify-content: center;
@@ -202,7 +210,7 @@ form input:focus {
 
 .top-header .contacts {
   display: flex;
-  height: 60px;
+  height: 65px;
   align-content: center;
   flex-direction: column;
   justify-content: center;
@@ -279,21 +287,22 @@ form input:focus {
 }
 
 .entry-out svg:first-of-type {
-  padding: 14px;
+  padding: 13px;
 }
 
 .entry-out svg:last-of-type {
-  padding: 14px 10px 14px 0px;
+  padding: 14px 10px 14px 38px;
 }
 
 .in-down {
   display: flex;
   align-content: center;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 
   padding: 0px;
   margin: 0px;
+  margin-left: 17px;
 }
 
 .user-navigation.out li,
@@ -317,6 +326,7 @@ form input:focus {
 
 .user-navigation.in {
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .entry {
@@ -338,6 +348,12 @@ form input:focus {
   color: black;
   background-color: white;
   text-align: center;
+}
+
+.check-in {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .check-in-link {
@@ -423,26 +439,37 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   background-color: #32425c;
   color: #ffffff;
   width: 100%;
+  height: 190px;
 }
 
 .top-footer {
   display: flex;
-  align-content: center;
+  align-items: flex-end;
   justify-content: space-between;
   flex-direction: row;
   width: 940px;
   padding: 0 10px;
+  min-height: 68px;
+  margin-bottom: 32px;
 }
 
 .main-navigator-footer,
 .main-navigator-footer2{
   display: flex;
   flex-direction: row;
+}
+
+.main-navigator-footer {
+  margin: 0;
+}
+
+.main-navigator-footer2{
+  margin-top: 0;
 }
 
 .main-navigator-footer li,
@@ -457,6 +484,7 @@ li {
   align-content: center;
   width: 940px;
   padding: 0 10px;
+  margin-bottom: 53px;
 }
 
 .footer-down {
@@ -465,6 +493,7 @@ li {
   align-content: center;
   justify-content: center;
 
+  height: 110px;
   background-color: #293449;
   color: #ffffff;
   width: 100%;
@@ -496,8 +525,15 @@ li {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+}
 
-  color: white;
+.footer-adress address,
+.footer-adress a {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #f1f5f7;
 }
 
 .footer-down a,
@@ -518,6 +554,11 @@ div a {
   color: #32425c;
   text-decoration: underline;
   text-decoration-color: #32425c;
+}
+
+.in-down a:hover {
+  color: #ee3643;
+  text-decoration-color: #ee3643;
 }
 
 .dotter {
@@ -696,10 +737,20 @@ div a {
   text-transform: uppercase;
 }
 
+.catalog-item .actions .buy:hover {
+  background-color: #5fbb2d;
+  border: 3px solid #5fbb2d;
+  border-bottom-color: #367315;
+}
+
 .catalog-item .actions .in-marker {
   color: #32425c;
   background: white;
   border-bottom-color: #63a63e;
+}
+
+.catalog-item .actions .in-marker:hover {
+  border: 3px solid #32425c;
 }
 
 .catalog-item .actions {
