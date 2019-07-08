@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="css/css-index.css">
-    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/css-index.min.css">
+    <link rel="stylesheet" href="css/header-footer.min.css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -88,60 +88,68 @@
             </div>
 
             <div class="drills">
-              <!--<div class="drills-drills">-->
-                <!--<div class="drills-block">-->
-                  <!--<h2>Перфораторы</h2>-->
-                  <!--<p>Настоящие мужские игрушки!</p>-->
-                <!--</div>-->
-                <!--<a class="red-button" href="#">Открыть каталог</a>-->
-                <!--<img src="img/perf.png">-->
-              <!--</div>-->
-              <div class="drills-perf">
+
+              <div class="drills-drills mySlides">
+                <div class="drills-block">
+                  <h2>Перфораторы</h2>
+                  <p>Настоящие мужские игрушки!</p>
+                </div>
+                <div class="red-button" href="#">Открыть каталог</div>
+                <img src="img/perf.png" width="620px" height="266px">
+              </div>
+
+              <div class="drills-perf  mySlides">
                 <div class="drills-block">
                   <h2>Дрели</h2>
                   <p>Соседям на радость!</p>
                 </div>
-                <a class="red-button" href="#">Открыть каталог</a>
-                <img src="img/drill.png">
+                <div class="red-button" href="#">Открыть каталог</div>
+                <img src="img/drill.png" width="620px" height="266px">
               </div>
-              <div class="next">
+
+              <div class="arrow">
                 <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
+                <svg class="right-arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
               </div>
-              <div class="previous">
-                <svg class="right-arrow"xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
-              </div>
-              <div class="circle1">
-              </div>
-              <div class="circle2">
-              </div>
-              <div class="circle3">
+
+              <div class="indi">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <!--<div class="circle1">-->
+                <!--</div>-->
+                <!--<div class="circle2">-->
+                <!--</div>-->
+                <!--<div class="circle3">-->
+                <!--</div>-->
               </div>
 
             </div>
+          <div class="sale reclame-block">
+          <div>
+            <h3>Скидки 50%</h3>
+            <div class="reclame-button">
+              <a href="#">на 350 товаров</a>
+            </div>
+          </div>
+          <div class="reclame-img">
+            <img src="img/svg/icon-4.svg">
+          </div>
+        </div>
 
-            <div class="sale reclame-block">
-              <div>
-                <h3>Скидки 50%</h3>
-                <div class="reclame-button">
-                  <a href="#">на 350 товаров</a>
-                </div>
-              </div>
-              <div class="reclame-img">
-                <img src="img/svg/icon-4.svg">
+          <div class="reclame-delivery reclame-block">
+            <div>
+              <h3>Доставка</h3>
+              <div class="reclame-button">
+                <a href="#">бесплатно</a>
               </div>
             </div>
-
-            <div class="reclame-delivery reclame-block">
-              <div>
-                <h3>Доставка</h3>
-                <div class="reclame-button">
-                  <a href="#">бесплатно</a>
-                </div>
-              </div>
-              <div class="reclame-img">
-                <img src="img/svg/icon-5.svg">
-              </div>
+            <div class="reclame-img">
+              <img src="img/svg/icon-5.svg">
             </div>
+          </div>
+            </div>
+
+
 
         </div>
           <div class="popular-product">
@@ -255,9 +263,9 @@
           <div class="service-footer">
             <div class="service-main">
               <ul class="service-ul">
-                <li class="service-active service-delivery"><a class="serv" href="#">Доставка</a></li>
-                <li class="service-active service-guarantee"><a class="serv" href="#">Гарантия</a></li>
-                <li class="service-active service-credit"><a class="serv" href="#">Кредит</a></li>
+                <li class="service-active service-delivery">Доставка</li>
+                <li class="service-active service-guarantee">Гарантия</li>
+                <li class="service-active service-credit">Кредит</li>
               </ul>
               <img src="img/shadow.png">
             </div>
