@@ -10,10 +10,14 @@ window.onload = function () {
   var email = popup.querySelector("input[name='e-mail']");
   var letter = popup.querySelector("textarea");
 
-  var serviceA = document.querySelectorAll(".serv");
   var serviceLi = document.querySelectorAll(".service-active");
   var serviceParameter = document.querySelectorAll(".JScheked");
 
+  var nextArr = document.querySelector(".right-arrow");
+  var previousArr = document.querySelector(".left-arrow");
+  var drills =  document.querySelector(".drills-drills");
+  var perf =  document.querySelector(".drills-perf");
+  var currentSlide = document.querySelectorAll(".dot");
 
   letter.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -55,6 +59,7 @@ window.onload = function () {
     }
   } );
 
+  serviceLi[0].classList.add("selected");
   serviceParameter[0].classList.add("active");
 
     for (var i=0; i<serviceLi.length; i++) {
@@ -65,12 +70,48 @@ window.onload = function () {
           for (var i=0; i<serviceLi.length; i++) {
             serviceParameter[i].classList.remove("active");
             serviceLi[i].classList.remove("selected");
-            serviceA[i].classList.remove("sel");
           }
           serviceParameter[Index].classList.add("active");
           serviceLi[Index].classList.add("selected");
-          serviceA[Index].classList.add("sel");
         }
       })(i));
     }
+
+  var currentSlide;
+  var slideIndex = 1;
+    showSlides(slideIndex);
+
+    nextArr.addEventListener("click", function (){
+      showSlides = slideIndex += 1;
+    });
+  previousArr.addEventListener("click", function (){
+      showSlides = slideIndex -= 1;
+    });
+
+    function currentSlide() {
+      showSlides = slideIndex;
+    }
+
+    function showSlides(slideIndex) {
+      var i;
+      var slides = document.querySelectorAll('mySlides');
+      var dots = document.querySelectorAll('dot');
+
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      if (slideIndex < 1) {
+        slideIndex = slides.length
+      }
+      for (i=0; i < slides.length; i++){
+        slides[i].classList.add("drills-perf-click");
+      }
+      for (i=0; i < dots.length; i++) {
+        dots[i].className= dots[i].className.replace("active","");
+      }
+      slides[slideIndex-1].classList.add(".drills-perf-click");
+      dots[slideIndex-1].classList.add("dotSelected");
+
+    }
+    debugger;
 };
