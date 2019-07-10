@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="css/css-index.min.css">
-    <link rel="stylesheet" href="css/header-footer.min.css">
+    <link rel="stylesheet" href="css/header-footer.css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <script src="js/all.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -94,7 +92,7 @@
                   <h2>Перфораторы</h2>
                   <p>Настоящие мужские игрушки!</p>
                 </div>
-                <div class="red-button">Открыть каталог</div>
+                <a class="red-button" href="catalog.html">Открыть каталог</a>
                 <img src="img/perf.png" width="620" height="266" alt="Перфораторы">
               </div>
 
@@ -103,7 +101,7 @@
                   <h2>Дрели</h2>
                   <p>Соседям на радость!</p>
                 </div>
-                <div class="red-button">Открыть каталог</div>
+                <a class="red-button" href="catalog.html">Открыть каталог</a>
                 <img src="img/drill.png" width="620" height="266" alt="Дрели">
               </div>
 
@@ -160,7 +158,7 @@
             <li class="catalog-item">
               <article>
                 <div class="actions">
-                  <a href="#buy" class="buy">Купить</a>
+                  <a href="#buy" class="buy"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить</a>
                   <a href="#in-marker" class="in-marker">В закладки</a>
                 </div>
                 <p class="catalog-item-image">
@@ -180,7 +178,7 @@
             <li class="catalog-item">
               <article>
                 <div class="actions">
-                  <a href="#buy" class="buy">Купить</a>
+                  <a href="#buy" class="buy"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить</a>
                   <a href="#in-marker" class="in-marker">В закладки</a>
                 </div>
                 <p class="catalog-item-image">
@@ -200,7 +198,7 @@
             <li class="catalog-item">
               <article>
                 <div class="actions">
-                  <a href="#buy" class="buy">Купить</a>
+                  <a href="#buy" class="buy"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить</a>
                   <a href="#in-marker" class="in-marker">В закладки</a>
                 </div>
                 <p class="catalog-item-image">
@@ -220,7 +218,7 @@
             <li class="catalog-item">
               <article>
                 <div class="actions">
-                  <a href="#buy" class="buy">Купить</a>
+                  <a href="#buy" class="buy"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить</a>
                   <a href="#in-marker" class="in-marker">В закладки</a>
                 </div>
                 <p class="catalog-item-image">
@@ -244,7 +242,7 @@
           </div>
           <ul class="manufacturers-list">
             <li><div class="label-logo"><a href="#"><img src="img/content/bosch.png" alt="bosch" width="126" height="37"></a></div></li>
-            <li><div class="label-logo"><a href="#"><img src="img/content/Makita.png" alt="Makita" width="123" height="40"></a></div></li>
+            <li><div class="label-logo"><a href="#"><img src="img/content/makita.png" alt="Makita" width="123" height="40"></a></div></li>
             <li><div class="label-logo"><a href="#"><img src="img/content/DeWALT.png" alt="DeWALT" width="146" height="44"></a></div></li>
             <li><div class="label-logo"><a href="#"><img src="img/content/Интерскол.png" alt="Интерскол" width="200" height="88"></a></div></li>
             <li><div class="label-logo"><a href="#"><img src="img/content/Hitachi.png" alt="Hitachi" width="169" height="31"></a></div></li>
@@ -396,6 +394,7 @@
 
     <button class="close-button"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
   </section>
+    <script  src="js/all.min.js"></script>
   </body>
 </html>
 
